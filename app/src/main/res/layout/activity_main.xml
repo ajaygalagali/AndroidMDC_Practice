@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/snackbarClicked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="SnakBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogbutton" />
+
+    <Button
+        android:id="@+id/dialogbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="32dp"
+            android:backgroundTint="@color/colorPrimary"
+
+            android:src="@drawable/ic_baseline_add_24"
+            app:rippleColor="@color/colorAccent"
+
+            />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:layout_margin="32dp"
+            android:backgroundTint="@color/colorPrimary"
+
+            android:text="Go Back"
+            app:icon="@drawable/abc_vector_test" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="32dp"
+
+        android:src="@drawable/ic_baseline_attach_file_24"
+        app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/fabT_one"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+
+        android:background="@drawable/fab_text_bg"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="10dp"
+        android:text="Add attachment"
+        app:layout_constraintBottom_toBottomOf="@+id/fab_one"
+        app:layout_constraintEnd_toStartOf="@+id/fab_one"
+        app:layout_constraintTop_toTopOf="@+id/fab_one" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+
+        android:layout_marginBottom="10dp"
+
+        android:src="@drawable/ic_baseline_audiotrack_24"
+        app:layout_constraintBottom_toTopOf="@+id/fab_one"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/fabT_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+
+        android:background="@drawable/fab_text_bg"
+        android:paddingStart="20dp"
+
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="10dp"
+        android:text="Add music track"
+        app:layout_constraintBottom_toBottomOf="@+id/fab_two"
+        app:layout_constraintEnd_toStartOf="@+id/fab_two"
+        app:layout_constraintTop_toTopOf="@+id/fab_two" />
+
+    <Button
+        android:id="@+id/buttonBottomAppBAr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BootomAppBar"
+        app:layout_constraintBottom_toTopOf="@+id/fabT_two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/snackbarClicked" />
+
+    <Button
+        android:id="@+id/buttonDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date Picker"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBottomAppBAr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/snackbarClicked" />
+
+    <Button
+        android:id="@+id/buttonInputFields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Input Fields"
+        app:layout_constraintBottom_toTopOf="@+id/fabT_two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBottomAppBAr" />
+
+    <Button
+        android:id="@+id/buttonNavDrawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NavDrawer"
+        app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout"
+        app:layout_constraintEnd_toStartOf="@+id/fabT_two"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBottomAppBAr" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

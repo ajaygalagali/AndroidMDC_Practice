@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Hello world">
+        <menu>
+            <item android:title="Camera" android:icon="@drawable/ic_baseline_local_see_24"/>
+            <item android:title="Gallery" android:icon="@drawable/ic_baseline_local_see_24"/>
+            <item android:title="Files" android:icon="@drawable/ic_baseline_local_see_24"/>
+            <item android:title="Log out" android:icon="@drawable/ic_baseline_local_see_24"/>
+        </menu>
+    </item>
+
+    <item android:title="Python">
+        <menu>
+            <item android:title="Character" android:icon="@drawable/ic_baseline_local_see_24"/>
+            <item android:title="String" android:icon="@drawable/ic_baseline_local_see_24"/>
+            <item android:title="Array" android:icon="@drawable/ic_baseline_local_see_24"/>
+            <item android:title="Stack" android:icon="@drawable/ic_baseline_local_see_24"/>
+        </menu>
+    </item>
+
+</menu>

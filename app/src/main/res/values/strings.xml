@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MDC_Test</string>
+    <string name="navViewOpen">NavViewOpen</string>
+    <string name="NavViewClose">NavViewClose</string>
+</resources>
